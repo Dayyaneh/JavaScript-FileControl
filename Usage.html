@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usage</title>
+    <link rel="stylesheet" href="MD-File-Control/MD-File-Control.css">
+</head>
+<body>
+    <div id="pnlContainer" style="height: 350px; width: 50%" >
+    </div>
+
+    <script src="MD-File-Control/MD-File-Control.js"></script>
+    <script>
+        const pnlContainer = document.getElementById('pnlContainer');
+        const fileControl =  new MDFileControl(document, pnlContainer);
+        fileControl.initiateControl('Please choose a file', FileTypes.Image, 520);
+    </script>
+</body>
+</html>
